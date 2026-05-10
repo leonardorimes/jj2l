@@ -11,7 +11,7 @@ export default function Cta() {
           Contact JJ2L Construction today for a free estimate and let us transform your backyard.
         </p>
         <div className={styles.actions}>
-          <Link href="#contact" className={styles.primaryBtn}>
+          <Link href="/#contact" className={styles.primaryBtn}>
             Get Free Estimate
           </Link>
           <a href="tel:6893341505" className={styles.secondaryBtn}>
