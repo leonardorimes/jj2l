@@ -1,0 +1,92 @@
+.servicesSection {
+  background-color: var(--color-bg-light);
+  padding: 6rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: var(--color-primary-dark);
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.underline {
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-accent);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--color-white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 2rem;
+}
+
+.cardTitle {
+  color: var(--color-primary-dark);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cardDescription {
+  color: var(--color-text-gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}

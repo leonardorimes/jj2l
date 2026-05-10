@@ -1,0 +1,99 @@
+.navbar {
+  background-color: var(--color-primary-dark);
+  padding: 1rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 1.25rem;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo span {
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navLink {
+  color: var(--color-white);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: var(--color-accent);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-accent);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.estimateBtn {
+  background-color: var(--color-accent);
+  color: var(--color-primary-dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.estimateBtn:hover {
+  background-color: var(--color-accent-hover);
+}
+
+@media (max-width: 992px) {
+  .navLinks {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .phone {
+    display: none;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+}

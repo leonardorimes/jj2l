@@ -1,0 +1,138 @@
+.heroSection {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px; /* Offset for navbar */
+}
+
+.backgroundContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  object-fit: cover;
+  object-position: center;
+  animation: subtleZoom 30s ease-in-out infinite;
+}
+
+@keyframes subtleZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(30, 32, 47, 0.6), rgba(30, 32, 47, 0.7));
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 2rem;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  color: #e0e0e0;
+}
+
+.actions {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.primaryBtn {
+  background-color: var(--color-accent);
+  color: var(--color-primary-dark);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.2s ease;
+  min-width: 200px;
+}
+
+.primaryBtn:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.secondaryBtn {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  min-width: 200px;
+}
+
+.secondaryBtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-white);
+}
+
+.subtext {
+  font-size: 0.9rem;
+  color: #c0c0c0;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .primaryBtn, .secondaryBtn {
+    width: 100%;
+  }
+}
