@@ -20,6 +20,7 @@ export default function Navbar() {
         </div>
         
         <ul className={styles.navLinks}>
+          <li><Link href="/about" className={styles.navLink}>ABOUT</Link></li>
           <li><Link href="/#services" className={styles.navLink}>SERVICES</Link></li>
           <li><Link href="/#why-us" className={styles.navLink}>WHY US</Link></li>
           <li><Link href="/#gallery" className={styles.navLink}>GALLERY</Link></li>

@@ -38,7 +38,10 @@ export default function PrivacyPolicy() {
           <h2>4. Data Security</h2>
           <p>We implement industry-standard security measures to protect your personal information from unauthorized access, alteration, or disclosure.</p>
           
-          <h2>5. Contact Us</h2>
+          <h2>5. Cookies and Tracking Technologies</h2>
+          <p>We use cookies and similar tracking technologies (such as web beacons and pixels) to track activity on our website and hold certain information. These technologies are used to enhance your browsing experience, analyze website traffic, and understand where our visitors are coming from. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service. By using our website, you consent to the use of these tracking technologies.</p>
+          
+          <h2>6. Contact Us</h2>
           <p>If you have any questions about this Privacy Policy, please contact us:</p>
           <address>
             <strong>JJ2L SERVICES LLC</strong><br />

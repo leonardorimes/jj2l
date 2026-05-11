@@ -27,6 +27,7 @@ export default function Footer() {
           <div className={styles.column}>
             <h4 className={styles.columnTitle}>QUICK LINKS</h4>
             <ul className={styles.linkList}>
+              <li><Link href="/about" className={styles.link}>About Us</Link></li>
               <li><Link href="/#services" className={styles.link}>Services</Link></li>
               <li><Link href="/#why-us" className={styles.link}>Why Us</Link></li>
               <li><Link href="/#gallery" className={styles.link}>Gallery</Link></li>
@@ -54,7 +55,7 @@ export default function Footer() {
         </div>
         
         <div className={styles.bottomBar}>
-          <p>&copy; {new Date().getFullYear()} JJ2L Construction Company. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} JJ2L SERVICES LLC. All rights reserved.</p>
           <div className={styles.legalLinks}>
             <Link href="/privacypolicy">Privacy Policy</Link>
             <span className={styles.separator}>|</span>
