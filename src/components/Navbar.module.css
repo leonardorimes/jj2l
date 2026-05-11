@@ -92,4 +92,13 @@
   .container {
     padding: 0 1rem;
   }
+  .logoImage {
+    max-width: 180px;
+    height: auto;
+  }
+  .estimateBtn {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
 }

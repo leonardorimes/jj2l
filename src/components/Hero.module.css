@@ -135,4 +135,7 @@
   .primaryBtn, .secondaryBtn {
     width: 100%;
   }
+  .backgroundImage {
+    animation: none;
+  }
 }
