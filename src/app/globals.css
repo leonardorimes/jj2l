@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --color-primary-dark: #1b1e2b;
+  --color-primary-dark: #252241;
   --color-accent: #e2c19d;
   --color-accent-hover: #d2af8a;
   --color-bg-light: #f8f6f4;
@@ -19,12 +19,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: var(--font-family);
   background-color: var(--color-white);
   color: var(--color-text-dark);
+  overflow-x: hidden;
 }
 
 a {

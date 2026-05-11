@@ -1,5 +1,5 @@
 .ctaSection {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-white);
   padding: 5rem 0;
   text-align: center;
 }
@@ -14,14 +14,14 @@
 }
 
 .title {
-  color: var(--color-white);
+  color: var(--color-primary-dark);
   font-size: 2.25rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .subtitle {
-  color: #c0c0c0;
+  color: var(--color-text-gray);
   font-size: 1.05rem;
   margin-bottom: 2.5rem;
   line-height: 1.6;
@@ -49,8 +49,8 @@
 
 .secondaryBtn {
   background-color: transparent;
-  color: var(--color-white);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--color-primary-dark);
+  border: 1px solid rgba(37, 34, 65, 0.3);
   padding: 0.85rem 2rem;
   border-radius: 8px;
   font-weight: 500;
@@ -62,8 +62,8 @@
 }
 
 .secondaryBtn:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(37, 34, 65, 0.05);
+  border-color: rgba(37, 34, 65, 0.6);
 }
 
 .icon {

@@ -1,5 +1,5 @@
 .footerSection {
-  background-color: #171924; /* Slightly darker than primary-dark */
+  background-color: var(--color-primary-dark);
   color: var(--color-white);
   padding: 5rem 0 2rem 0;
 }
