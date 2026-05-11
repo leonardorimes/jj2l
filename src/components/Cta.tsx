@@ -5,16 +5,6 @@ import { LuPhone } from 'react-icons/lu';
 import styles from './Cta.module.css';
 
 export default function Cta() {
-  const handleScrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (typeof window !== 'undefined' && window.location.pathname === '/') {
-      e.preventDefault();
-      const contactSection = document.getElementById('contact');
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: 'smooth' });
-        window.history.pushState(null, '', '/#contact');
-      }
-    }
-  };
   return (
     <section className={styles.ctaSection}>
       <div className={styles.container}>
@@ -23,7 +13,7 @@ export default function Cta() {
           Contact JJ2L Construction today for a free estimate and let us transform your backyard.
         </p>
         <div className={styles.actions}>
-          <Link href="/#contact" className={styles.primaryBtn} onClick={handleScrollToContact}>
+          <Link href="/contact" className={styles.primaryBtn}>
             Get Free Estimate
           </Link>
           <a href="tel:6893341505" className={styles.secondaryBtn}>

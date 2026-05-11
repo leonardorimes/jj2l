@@ -1,0 +1,18 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navWrapper {
+  position: relative;
+  background-color: var(--color-primary-dark);
+}
+
+.navWrapper :global(nav) {
+  position: static !important;
+}
+
+:global(chat-widget) {
+  display: none !important;
+}
