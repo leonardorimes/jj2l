@@ -1,9 +1,21 @@
+"use client";
+
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Hero.module.css';
 import Navbar from './Navbar';
 
 export default function Hero() {
+  const handleScrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (typeof window !== 'undefined' && window.location.pathname === '/') {
+      e.preventDefault();
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+        window.history.pushState(null, '', '/#contact');
+      }
+    }
+  };
   return (
     <div className={styles.heroSection}>
       <Navbar />
@@ -27,7 +39,7 @@ export default function Hero() {
         </p>
         
         <div className={styles.actions}>
-          <Link href="/#contact" className={styles.primaryBtn}>
+          <Link href="/#contact" className={styles.primaryBtn} onClick={handleScrollToContact}>
             Get Free Estimate
           </Link>
           <a href="tel:6893341505" className={styles.secondaryBtn}>
