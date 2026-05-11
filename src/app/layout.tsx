@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ChatWidgetClient from "@/components/ChatWidgetClient";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
+        <ChatWidgetClient />
       </body>
     </html>
   );

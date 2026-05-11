@@ -12,7 +12,3 @@
 .navWrapper :global(nav) {
   position: static !important;
 }
-
-:global(chat-widget) {
-  display: none !important;
-}
